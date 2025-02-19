@@ -1,5 +1,3 @@
-# MedicalChatBot_RAG
-
 ```mermaid
 graph TD
     A[Start] --> B[Load PDF Documents]

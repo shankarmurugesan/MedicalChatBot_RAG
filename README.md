@@ -10,7 +10,7 @@ graph TD;
     B --> C[Split Documents into Chunks];
     C --> D[Generate Embeddings];
     D --> E[Create Vector Store];
-    E --> F[Initialize LLM (LlamaCpp)];
+    E --> F[Initialize LLM];
     F --> G[Create Retrieval Chain];
     G --> H[Define Gradio Interface];
     H --> I[Deploy to Hugging Face Spaces];

@@ -10,26 +10,29 @@ graph TD
     H --> I[Deploy to Hugging Face Spaces]
     I --> J[End]
 
----
 
-### Explanation of the Diagram
-
-1. **Start**: The process begins.
-2. **Load PDF Documents**: Use `PyPDFDirectoryLoader` to load PDF files from a directory.
-3. **Split Documents into Chunks**: Use `RecursiveCharacterTextSplitter` to split documents into smaller chunks.
-4. **Generate Embeddings**: Use `SentenceTransformerEmbeddings` to generate embeddings for the text chunks.
-5. **Create Vector Store**: Use `Chroma` to create a vector store from the embeddings.
-6. **Initialize LLM (LlamaCpp)**: Load the Mistral-7B model using `LlamaCpp`.
-7. **Create Retrieval Chain**: Combine the retriever, prompt template, LLM, and output parser into a retrieval chain.
-8. **Define Gradio Interface**: Create a Gradio interface for user interaction.
-9. **Deploy to Hugging Face Spaces**: Push the code to Hugging Face Spaces for deployment.
-10. **End**: The process completes.
 
 ---
 
-### Example GitHub README with Diagram
+### Explanation of Fixes
 
-Here’s how you can include the diagram in your GitHub README file:
+1. **Arrow Syntax**:
+   - Ensure all arrows (`-->`) are properly formatted and have no extra spaces or characters.
+   - Each arrow must connect two nodes without any breaks.
+
+2. **Node Labels**:
+   - Node labels (e.g., `[Load PDF Documents]`) must be enclosed in square brackets (`[]`).
+   - Avoid special characters or spaces in node IDs (e.g., `A`, `B`, `C`).
+
+3. **Line Breaks**:
+   - Each line in the Mermaid diagram must represent a single step or connection.
+   - Do not split a single connection across multiple lines.
+
+---
+
+### Updated GitHub README Example
+
+Here’s how you can include the corrected diagram in your GitHub README:
 
 ```markdown
 # BioMistral Medical Chatbot
